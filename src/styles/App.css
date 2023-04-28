@@ -1,7 +1,41 @@
+* , *::after, *:before {
+  margin: 0;
+  padding: 0;
+}
+
+
 .main-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgba(55, 53, 53, 0.185);
+    background-image: url(../../public/images/pexel.jpg); 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+    /* padding: 0;  */
+    background-position: center;
+}
+
+.main-container h2 {
+  color: rgba(255, 255, 255, 0.743);
+}
+
+.main-container p {
+  color:  rgba(255, 255, 255, 0.743);
+}
+
+.login-container {
+  
+  background-repeat: no-repeat;
+  background-attachment:fixed ;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: center;
+
 }
 
 

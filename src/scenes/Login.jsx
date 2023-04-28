@@ -39,7 +39,7 @@ export default function Login({setUser}) {
          
 
     return(
-        <>
+        <div className = "login-container">
         <h2>Login</h2>
         <form onSubmit= {handleLogin}>
 
@@ -64,7 +64,7 @@ export default function Login({setUser}) {
 
         <input type="submit" value="Login"/>
     </form>
-  </>
- 
+  
+    </div>
     )
 }
