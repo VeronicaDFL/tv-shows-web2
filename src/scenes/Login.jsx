@@ -28,7 +28,8 @@ export default function Login({setUser}) {
                 return
                 }
 
-             setUser(data)
+             setUser(data)//we need to store our token
+             localStorage.setItem("token", data.token)
              navigate("/")
              })
 

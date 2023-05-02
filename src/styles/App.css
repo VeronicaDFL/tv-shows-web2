@@ -9,7 +9,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba(55, 53, 53, 0.185);
-    background-image: url(../../public/images/pexel.jpg); 
     width: 100%;
     background-repeat: no-repeat;
     background-attachment:fixed ;
@@ -28,14 +27,33 @@
 
 .login-container {
   
-  background-repeat: no-repeat;
-  background-attachment:fixed ;
-  background-size: cover;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-direction: center;
+  padding: 60px;
+  font-display:initial;
+  background-repeat: no-repeat;
+  margin: 0;
+ 
+ 
+}
 
+.login-container  h2 {
+   padding: 30px;
+  
+
+}
+
+.login-container form {
+ padding: 10px;
+
+}
+
+.login-container label {
+  padding: 20px;
+  
 }
 
 

@@ -13,9 +13,13 @@ export default function AddShow ({setShows}) {
     const handleAddShow = (e) => {
         e.preventDefault()
 
+        const token = localStorage.getItem("token")//get out jwt from localStorage
+
         fetch("https://tv-shows-api-vdf.web.app/shows", {
             method: "POST",
-            headers:{ "Content-Type":"application/json"},
+            headers:{ "Content-Type":"application/json",
+            "Authorization": token,//added token to request
+        },
             body: JSON.stringify({title,poster,season})
         })
         .then(resp => resp.json())
